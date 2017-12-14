@@ -4,6 +4,6 @@ do
 INO_FILE=$(echo $file | awk '{print $4}')
  echo $file | awk '{print $4}'
 
- /usr/bin/rsync -avuz -e 'ssh -p 22'  --size-only  ${INO_FILE} root@192.168.X.X:/home/media/ > /dev/null 2>&1 &
+ /usr/bin/rsync -avuz -e 'ssh -p 22'  --size-only  ${INO_FILE} root@192.168.X.X:/home/media/10/ > /dev/null 2>&1 &
 
 done
